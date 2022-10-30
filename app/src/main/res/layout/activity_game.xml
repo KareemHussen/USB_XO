@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/XO_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/cube2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:background="@drawable/custom_textview"
+            android:maxLength="1"
+            android:paddingVertical="@dimen/_30sdp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_35ssp"
+            app:layout_constraintBottom_toTopOf="@+id/cube5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cube1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cube5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:background="@drawable/custom_textview"
+            android:maxLength="1"
+            android:paddingVertical="@dimen/_30sdp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_35ssp"
+            app:layout_constraintBottom_toTopOf="@+id/cube8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cube4"
+            app:layout_constraintTop_toBottomOf="@+id/cube2" />
+
+        <TextView
+            android:id="@+id/cube8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_161sdp"
+            android:background="@drawable/custom_textview"
+            android:maxLength="1"
+            android:paddingVertical="@dimen/_30sdp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_35ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cube7"
+            app:layout_constraintTop_toBottomOf="@+id/cube5" />
+
+        <TextView
+            android:id="@+id/cube4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/custom_textview"
+            android:maxLength="1"
+            android:paddingVertical="@dimen/_30sdp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_35ssp"
+            app:layout_constraintBottom_toTopOf="@+id/cube7"
+            app:layout_constraintEnd_toStartOf="@+id/cube5"
+            app:layout_constraintStart_toEndOf="@+id/cube3"
+            app:layout_constraintTop_toBottomOf="@+id/cube1" />
+
+        <TextView
+            android:id="@+id/cube3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:background="@drawable/custom_textview"
+            android:maxLength="1"
+            android:paddingVertical="@dimen/_30sdp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_35ssp"
+            app:layout_constraintBottom_toTopOf="@+id/cube6"
+            app:layout_constraintEnd_toStartOf="@+id/cube4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cube0" />
+
+        <TextView
+            android:id="@+id/cube1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:background="@drawable/custom_textview"
+            android:maxLength="1"
+            android:paddingVertical="@dimen/_30sdp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_35ssp"
+            app:layout_constraintBottom_toTopOf="@+id/cube4"
+            app:layout_constraintEnd_toStartOf="@+id/cube2"
+            app:layout_constraintStart_toEndOf="@+id/cube0"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cube0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:background="@drawable/custom_textview"
+            android:maxLength="1"
+            android:paddingVertical="@dimen/_30sdp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_35ssp"
+            app:layout_constraintBottom_toTopOf="@+id/cube3"
+            app:layout_constraintEnd_toStartOf="@+id/cube1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cube6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_161sdp"
+            android:background="@drawable/custom_textview"
+            android:maxLength="1"
+            android:paddingVertical="@dimen/_30sdp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_35ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cube7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cube3" />
+
+        <TextView
+            android:id="@+id/cube7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_161sdp"
+            android:background="@drawable/custom_textview"
+            android:maxLength="1"
+            android:paddingVertical="@dimen/_30sdp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_35ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cube8"
+            app:layout_constraintStart_toEndOf="@+id/cube6"
+            app:layout_constraintTop_toBottomOf="@+id/cube4" />
+
+        <TextView
+            android:id="@+id/myTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="My Turn"
+            android:visibility="gone"
+            android:textColor="#002CCA"
+            android:textSize="@dimen/_30ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hisTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="His Turn"
+            android:visibility="gone"
+            android:textColor="#D80C0C"
+            android:textSize="@dimen/_30ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="My Score"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cube6" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:text="His Score"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cube8" />
+
+        <TextView
+            android:id="@+id/hisScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="28dp"
+            android:text="0"
+            android:textColor="#D80C0C"
+            android:textSize="@dimen/_30ssp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/myScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="0"
+            android:textColor="#002CCA"
+            android:textSize="@dimen/_30ssp"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/loadingAnim"
+        style="@style/SpinKitView.Large.Wave"
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_40sdp"
+        app:SpinKit_Color="#FA0101"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieWin"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/win"
+        />
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieLose"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/lose"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieDraw"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/draw"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
